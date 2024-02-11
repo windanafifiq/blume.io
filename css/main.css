@@ -32,12 +32,12 @@ body {
 }
 
 .flowers {
-  position: flex;
+  position: relative;
   transform: scale(0.9);
 }
 
 .flower {
-  position: flex;
+  position: absolute;
   bottom: 10vmin;
   transform-origin: bottom center;
   z-index: 10;

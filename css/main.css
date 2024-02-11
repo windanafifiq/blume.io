@@ -33,8 +33,7 @@ body {
 
 .flowers {
   position: relative;
-  transform: scale(0.9);
-}
+  transform: scale(1.2);
 
 .flower {
   position: absolute;
@@ -43,6 +42,13 @@ body {
   z-index: 10;
   --fl-speed: 0.8s;
 }
+  
+@media only screen and (max-width: 600px) {
+  .flowers {
+    transform: scale(3); /* Sesuaikan nilai skala sesuai kebutuhan untuk perangkat seluler */
+  }
+}
+  
 .flower--1 {
   -webkit-animation: moving-flower-1 4s linear infinite;
           animation: moving-flower-1 4s linear infinite;
